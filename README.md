@@ -25,8 +25,8 @@ uv pip install puke3615-weather-cli
 如果你安装了 `uv`，可以直接使用 `uvx` 运行，无需安装：
 
 ```bash
-# 从PyPI运行
-uvx puke3615-weather-cli weather 北京
+# 从PyPI运行（推荐）
+uvx --from puke3615-weather-cli weather 北京
 
 # 从GitHub运行
 uvx --from git+https://github.com/puke3615/uv-demo.git weather 北京
