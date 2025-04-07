@@ -10,7 +10,15 @@
 
 ## 安装方法
 
-### 方法1：从GitHub安装
+### 方法1：直接运行（无需安装）
+
+如果你安装了 `uv`，可以直接使用 `uvx` 从 GitHub 运行，无需安装：
+
+```bash
+uvx git+https://github.com/puke3615/uv-demo.git weather 北京
+```
+
+### 方法2：从GitHub安装
 
 ```bash
 # 使用uv（推荐）
@@ -20,7 +28,7 @@ uv pip install git+https://github.com/puke3615/uv-demo.git
 pip install git+https://github.com/puke3615/uv-demo.git
 ```
 
-### 方法2：本地安装
+### 方法3：本地安装
 
 ```bash
 # 克隆仓库
@@ -36,7 +44,7 @@ pip install -e .
 
 ## 使用方法
 
-安装完成后，你可以直接使用 `weather` 命令：
+如果你通过方法2或3安装了包，你可以直接使用 `weather` 命令：
 
 ```bash
 # 查询某个城市的天气
@@ -45,6 +53,8 @@ weather 北京
 # 带API密钥的查询（当前版本会忽略该参数）
 weather 上海 --api-key YOUR_API_KEY
 ```
+
+如果你使用 `uvx` (方法1)，请参考上面的 `uvx` 命令格式。
 
 ## 示例输出
 
