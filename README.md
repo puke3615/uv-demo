@@ -18,6 +18,12 @@
 uvx git+https://github.com/puke3615/uv-demo.git weather 北京
 ```
 
+**注意：** 如果上述命令报错提示找不到 `weather-cli`，可以尝试使用 `--package` 参数明确指定包来源：
+
+```bash
+uvx --package git+https://github.com/puke3615/uv-demo.git weather 北京
+```
+
 ### 方法2：从GitHub安装
 
 ```bash
