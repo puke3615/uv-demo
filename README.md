@@ -15,7 +15,12 @@
 如果你安装了 `uv`，可以直接使用 `uvx` 从 GitHub 运行，无需安装：
 
 ```bash
-uvx git+https://github.com/puke3615/uv-demo.git weather 北京
+# 方法1：直接运行命令
+uvx --from git+https://github.com/puke3615/uv-demo.git weather 北京
+
+# 方法2：先安装包，再运行命令
+uvx install git+https://github.com/puke3615/uv-demo.git
+uvx weather 北京
 ```
 
 **注意：** 如果上述命令报错提示找不到 `weather-cli`，可以尝试使用 `--package` 参数明确指定包来源：
