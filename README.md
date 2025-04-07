@@ -10,52 +10,55 @@
 
 ## 安装方法
 
-### 方法1：直接运行（无需安装）
-
-如果你安装了 `uv`，可以直接使用 `uvx` 从 GitHub 运行，无需安装：
+### 方法1：从PyPI安装（推荐）
 
 ```bash
-# 方法1：直接运行命令
+# 使用pip
+pip install puke3615-weather-cli
+
+# 使用uv
+uv pip install puke3615-weather-cli
+```
+
+### 方法2：直接运行（无需安装）
+
+如果你安装了 `uv`，可以直接使用 `uvx` 运行，无需安装：
+
+```bash
+# 从PyPI运行
+uvx puke3615-weather-cli weather 北京
+
+# 从GitHub运行
 uvx --from git+https://github.com/puke3615/uv-demo.git weather 北京
-
-# 方法2：先安装包，再运行命令
-uvx install git+https://github.com/puke3615/uv-demo.git
-uvx weather 北京
 ```
 
-**注意：** 如果上述命令报错提示找不到 `weather-cli`，可以尝试使用 `--package` 参数明确指定包来源：
+### 方法3：从GitHub安装
 
 ```bash
-uvx --package git+https://github.com/puke3615/uv-demo.git weather 北京
-```
-
-### 方法2：从GitHub安装
-
-```bash
-# 使用uv（推荐）
+# 使用uv
 uv pip install git+https://github.com/puke3615/uv-demo.git
 
-# 或使用pip
+# 使用pip
 pip install git+https://github.com/puke3615/uv-demo.git
 ```
 
-### 方法3：本地安装
+### 方法4：本地安装
 
 ```bash
 # 克隆仓库
 git clone https://github.com/puke3615/uv-demo.git
 cd uv-demo
 
-# 使用uv安装（推荐）
+# 使用uv安装
 uv pip install -e .
 
-# 或使用pip安装
+# 使用pip安装
 pip install -e .
 ```
 
 ## 使用方法
 
-如果你通过方法2或3安装了包，你可以直接使用 `weather` 命令：
+如果你通过方法1、3或4安装了包，你可以直接使用 `weather` 命令：
 
 ```bash
 # 查询某个城市的天气
@@ -65,7 +68,7 @@ weather 北京
 weather 上海 --api-key YOUR_API_KEY
 ```
 
-如果你使用 `uvx` (方法1)，请参考上面的 `uvx` 命令格式。
+如果你使用 `uvx` (方法2)，请参考上面的 `uvx` 命令格式。
 
 ## 示例输出
 

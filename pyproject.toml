@@ -1,5 +1,5 @@
 [project]
-name = "weather"
+name = "puke3615-weather-cli"
 version = "0.1.0"
 description = "一个简单的天气查询命令行工具"
 authors = [
